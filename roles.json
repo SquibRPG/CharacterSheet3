@@ -1,0 +1,291 @@
+{
+  "striker": {
+    "name": "Striker",
+    "dice": {
+        "physical": "d10",
+        "special": "d6",
+        "healing": "d4"
+    },
+    "levels": {
+    
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "Combo Instinct: When your Pokémon hits with a physical attack, it may immediately make a second physical attack against the same target. Usable 3 times per day. The second attack must use a different move and is made at –2 accuracy."
+      },
+        "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "striker",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "atk",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Enhance a Striker Great Move with increased damage dice or a conditional follow-up effect."
+        }
+      }
+    }
+  },
+
+  "anchor": {
+    "name": "Anchor",
+    "dice": {
+        "physical": "d8",
+        "special": "d8",
+        "healing": "d8"
+    },
+    "levels": {
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "Max Aura: Passive: You radiate a 10-ft aura. Allies in the aura benefit from one of your Anchor passives or active buffs. Twice per PB, you may apply one of your Reactions to an ally within the aura instead of yourself."
+
+      },
+      "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "anchor",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "def",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Anchor Signature Moves emphasize damage mitigation, endurance, or ally protection."
+        }
+      }
+    }
+  },
+
+  "balancer": {
+    "name": "Balancer",
+    "dice": {
+        "physical": "d6",
+        "special": "d6",
+        "healing": "d10"
+    },
+    "levels": {
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "Your Pokémon can sustain more battlefield effects than others. You may maintain 1 Focus effect at all times and 1 Conditional Focus. At the end of each round or when taking damage, make a Conditional Focus roll (DC = 10 + SP. DEF). "
+      },
+      "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "balancer",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "spDef",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Signature Support Moves gain enhanced healing, shielding, or ally-focused bonuses."
+        }
+      }
+    }
+  },
+
+  "mystic": {
+    "name": "Mystic",
+    "dice": {
+        "physical": "d6",
+        "special": "d8",
+        "healing": "d4"
+    },
+    "levels": {
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "When your Pokémon uses a special attack, it may direct the attack at a second target within 10 ft. The secondary target takes half damage. "
+      },
+      "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "mystic",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "spAtk",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Mystic Signature Moves amplify area coverage, elemental effects, or piercing power."
+        }
+      }
+    }
+  },
+
+  "manipulator": {
+    "name": "Manipulator",
+    "dice": {
+        "physical": "d6",
+        "special": "d6",
+        "healing": "d6"
+    },
+    "levels": {
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "When rolling Condition Dice for secondary effects that apply a status condition, roll with advantage. Once per combat, your Pokémon may roll a status-inflicting move against CE with advantage."
+      },
+      "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "manipulator",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "man",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Manipulator Signature Moves enhance condition duration, hazard impact, or control effects."
+        }
+      }
+    }
+  },
+
+  "reactor": {
+    "name": "Reactor",
+    "levels": {
+    "dice": {
+        "physical": "d6",
+        "special": "d6",
+        "healing": "d4"
+    },
+      "1": {
+        "type": "great_move",
+        "grants": {
+          "source": "role",
+          "moveIds": []
+        }
+      },
+      "2": {
+        "type": "feature",
+        "description": "Tempo Instinct: Once per round, you may replace your Trainer Action with an extra Reaction."
+      },
+      "3": {
+        "type": "trainer_action",
+        "grants": {
+          "moveTier": "great",
+          "requiredTag": "reactor",
+          "economy": "trainer_action"
+        },
+        "statBoost": {
+          "stat": "spd",
+          "amount": 2,
+          "displayOnly": true
+        }
+      },
+      "4": {
+        "type": "ability",
+        "grants": {
+          "sources": ["native", "role"]
+        }
+      },
+      "5": {
+        "type": "signature_move",
+        "rule": {
+          "source": "great_move",
+          "description": "Reactor Signature Moves emphasize reactions, movement triggers, or tempo-based bonuses."
+        }
+      }
+    }
+  }
+}

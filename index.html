@@ -1,0 +1,694 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div id="sheet"><a id="top"></a>
+
+<!--Player / Trainer Info-->
+      <div class="player.info">
+        <label>Player name:</label>
+        <input type= "text" id="player-name">
+       <label>Trainer Name:</label>
+        <input type="text" id="trainer-name">
+<label>Trainer Level:</label>
+        <input type="number" id="trainer-level" min="1" max="20" value="1">
+
+        <div class="sheet-actions-row">
+          <button type="button" id="export-sheet">Export Sheet</button>
+          <button type="button" id="import-sheet">Import Sheet</button>
+
+          <label class="view-mode-switch" for="toggle-edit">
+            <span id="view-mode-label" class="view-mode-label">View Mode: Off</span>
+            <input type="checkbox" id="toggle-edit" aria-label="Toggle View Mode">
+            <span class="view-mode-slider" aria-hidden="true"></span>
+          </label>
+        </div>
+      </div>
+
+    
+
+
+
+      
+<!-- Trainer Actions + Bag -->
+      <div class="top-section">
+
+        <div class="trainer-actions">
+          <h2>Trainer Actions</h2>
+          
+
+          <textarea id="trainer-actions"></textarea>
+          <div id="trainer-action-uses" class="uses-row"></div>
+          <div class="trainer-action-move-section">
+            <label><strong>Trainer Command</strong></label>
+            <select id="trainer-action-move-select" disabled>
+              <option value="">Select Trainer Action move</option>
+            </select>
+          </div>
+        </div>
+
+
+        
+
+      
+
+        <div class="trainer-features">
+          <h2>Trainer Features</h2>
+          <textarea id="trainer-features"></textarea>
+        </div>
+
+        <div class="abilities-section">
+          <h2>Abilities</h2>
+
+          <select id="ability-select" disabled>
+            <option value="">Select an ability</option>
+          </select>
+
+          <textarea
+            id="abilities"
+            rows="2"
+            placeholder="Ability description will appear here"
+            readonly
+          ></textarea>
+        </div>
+
+
+
+       <div class="bag">
+          <h2>Bag</h2>
+          <textarea id="bag"></textarea>
+
+        </div>
+      </div>
+
+<!-- Role Level + Progression -->
+<div class="roles-with-controls" aria-label="Role Selection">
+  <h2 class="role-selection-title">Role Selection</h2>
+
+  <div class="progression-panel">
+    <div id="pokemon-effective-role" class="effective-role">Role: —</div>
+    <div id="pokemon-role-progress" class="role-progress" aria-label="Role Progress"></div>
+  </div>
+
+  <div class="role-levels">
+    <div class="role-row">
+      <select id="role-1">
+        <option value="">-- Select Role --</option>
+        <option value="striker">Striker</option>
+        <option value="mystic">Mystic</option>
+        <option value="reactor">Reactor</option>
+        <option value="balancer">Balancer</option>
+        <option value="anchor">Anchor</option>
+        <option value="manipulator">Manipulator</option>
+      </select>
+
+      <div class="role-level-stepper" aria-label="Role 1 Level">
+        <button type="button" class="role-stepper-btn" data-target="role-1-level" data-delta="-1" aria-label="Decrease Role 1 Level">−</button>
+        <input type="number" id="role-1-level" min="0" max="20" value="0">
+        <button type="button" class="role-stepper-btn" data-target="role-1-level" data-delta="1" aria-label="Increase Role 1 Level">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-levels">
+    <div class="role-row">
+      <select id="role-2">
+        <option value="">-- Select Role --</option>
+        <option value="striker">Striker</option>
+        <option value="mystic">Mystic</option>
+        <option value="reactor">Reactor</option>
+        <option value="balancer">Balancer</option>
+        <option value="anchor">Anchor</option>
+        <option value="manipulator">Manipulator</option>
+      </select>
+
+      <div class="role-level-stepper" aria-label="Role 2 Level">
+        <button type="button" class="role-stepper-btn" data-target="role-2-level" data-delta="-1" aria-label="Decrease Role 2 Level">−</button>
+        <input type="number" id="role-2-level" min="0" max="20" value="0">
+        <button type="button" class="role-stepper-btn" data-target="role-2-level" data-delta="1" aria-label="Increase Role 2 Level">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-levels">
+    <div class="role-row">
+      <select id="role-3">
+        <option value="">-- Select Role --</option>
+        <option value="striker">Striker</option>
+        <option value="mystic">Mystic</option>
+        <option value="reactor">Reactor</option>
+        <option value="balancer">Balancer</option>
+        <option value="anchor">Anchor</option>
+        <option value="manipulator">Manipulator</option>
+      </select>
+
+      <div class="role-level-stepper" aria-label="Role 3 Level">
+        <button type="button" class="role-stepper-btn" data-target="role-3-level" data-delta="-1" aria-label="Decrease Role 3 Level">−</button>
+        <input type="number" id="role-3-level" min="0" max="20" value="0">
+        <button type="button" class="role-stepper-btn" data-target="role-3-level" data-delta="1" aria-label="Increase Role 3 Level">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-levels">
+    <div class="role-row">
+      <select id="role-4">
+        <option value="">-- Select Role --</option>
+        <option value="striker">Striker</option>
+        <option value="mystic">Mystic</option>
+        <option value="reactor">Reactor</option>
+        <option value="balancer">Balancer</option>
+        <option value="anchor">Anchor</option>
+        <option value="manipulator">Manipulator</option>
+      </select>
+
+      <div class="role-level-stepper" aria-label="Role 4 Level">
+        <button type="button" class="role-stepper-btn" data-target="role-4-level" data-delta="-1" aria-label="Decrease Role 4 Level">−</button>
+        <input type="number" id="role-4-level" min="0" max="20" value="0">
+        <button type="button" class="role-stepper-btn" data-target="role-4-level" data-delta="1" aria-label="Increase Role 4 Level">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pokemon-level-hidden">
+<!--Pokemon Level-->
+      <h3>Pokemon Level</h3>
+
+      <div>
+        <input id="party-pokemon-level" type="number" min="1" max="5">
+         
+      </div>
+            
+</div>
+<div class="active-pokemon-header">
+  <div id="active-pokemon-name" class="active-pokemon-name">Pokémon</div>
+
+  <div class="active-slot-buttons" aria-label="Active Pokémon">
+    <div class="active-slot-label">Set Active</div>
+    <div class="active-slot-dots">
+<button type="button" class="active-slot-btn" data-slot="1" aria-label="Set active Pokémon 1"></button>
+    <button type="button" class="active-slot-btn" data-slot="2" aria-label="Set active Pokémon 2"></button>
+    <button type="button" class="active-slot-btn" data-slot="3" aria-label="Set active Pokémon 3"></button>
+    <button type="button" class="active-slot-btn" data-slot="4" aria-label="Set active Pokémon 4"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Mini Stats -->
+<div class="mini-stats">
+  <div class="mini-stat">
+    <label>HP</label>
+    <input type="text" id="hp">
+  </div>
+
+  <div class="mini-stat">
+    <label>CE</label>
+    <input type="text" id="ce">
+  </div>
+
+  <div class="mini-stat">
+    <label>Speed</label>
+    <input type="text" id="move-speed">
+  </div>
+
+  <div class="mini-stat">
+    <label>PB</label>
+    <input type="text" id="pb">
+  </div>
+
+  <div class="mini-stat">
+    <label>Awareness</label>
+    <input type="text" id="aware">
+  </div>
+
+  <div class="mini-stat mini-stat--wide">
+    <label>Status</label>
+    <textarea id="active-status" rows="2" placeholder="e.g., Burned, Paralyzed, Flinched..."></textarea>
+  </div>
+</div>
+
+
+
+
+      
+
+<!-- Stats -->
+<div class="stats">
+
+        <div class="stat">
+            <label>ATK</label>
+            <input type="text" id="atk">
+            <input type="text" id="atk-mod">
+        </div>
+
+        <div class="stat">
+          <label>DEF</label>
+          <input type="text" id="def">
+          <input type="text" id="def-mod">
+        </div>
+
+        <div class="stat">
+          <label>SP. ATK</label>
+          <input type="text" id="sp-atk">
+          <input type="text" id="sp-atk-mod">
+        </div>
+
+        <div class="stat">
+          <label>SP. DEF</label>
+          <input type="text" id="sp-def">
+          <input type="text" id="sp-def-mod">
+        </div>
+
+        <div class="stat">
+          <label>MAN</label>
+          <input type="text" id="man">
+          <input type="text" id="man-mod">
+       </div>
+
+        <div class="stat">
+          <label>SPD</label>
+          <input type="text" id="spd">
+          <input type="text" id="spd-mod">
+        </div>
+
+      </div>
+          
+      
+
+<div class="moves-section">
+        <div class="move-tabs" role="tablist" aria-label="Move sections">
+          <button type="button" class="move-tab is-active" data-tab="nest" aria-selected="true">Nest Moves</button>
+          <button type="button" class="move-tab" data-tab="great" aria-selected="false">Great Moves</button>
+          <button type="button" class="move-tab" data-tab="signature" aria-selected="false">Signature Move</button>
+        </div>
+
+        <div class="move-tab-panels">
+          <div class="move-tab-panel is-active" data-tab="nest" role="tabpanel">
+            <!-- Nest Move Selection -->
+                    <div class="move-select-container">
+                      <label><strong>Nest Moves</strong></label>
+                      <div id="nest-move-slots"></div>
+                    </div>
+          </div>
+
+          <div class="move-tab-panel" data-tab="great" role="tabpanel" hidden>
+            <div id="great-move-container">
+                    <div class="great-moves">
+                      <label>Great Move</label>
+                      <div id="great-move-uses"></div>
+                      <select class="great-move-slot" disabled>
+                        <option value="">Role Move (Lvl 1)</option>
+                      </select>
+                    
+            
+                    </div>
+                  </div>
+          </div>
+
+          <div class="move-tab-panel" data-tab="signature" role="tabpanel" hidden>
+            <div id="sig-move-container">
+                    <div id="signature-move-uses"></div>
+            
+                    <div class="signature-move-section">
+                      <h2>Signature Move</h2>
+            
+                      <select id="signature-move-select" disabled>
+                        <option value="">Select a signature move</option>
+                      </select>
+                      <button
+                        id="signature-move-preview"
+                        type="button"
+                        disabled
+                      >
+                        👁 Preview
+                      </button>
+            
+                    </div>
+            
+                    <label>
+                      <input type="checkbox" id="toggle-signature-editor" checked>
+                      Edit Signature Move
+                    </label>
+            
+                    <div id="signature-move-editor" class="signature-editor">
+                      <h3>Signature Move Editor</h3>
+            
+                      <label>
+                        Element Override
+                        <input id="sig-element" type="text" placeholder="e.g. fire, water">
+                      </label>
+            
+                      <label>
+                        Category Override
+                        <select id="sig-category">
+                          <option value="">—</option>
+                          <option value="physical">Physical</option>
+                          <option value="special">Special</option>
+                          <option value="healing">Healing</option>
+                        </select>
+                      </label>
+            
+                      <label>
+                        Base Dice Override
+                        <input id="sig-base-dice" type="number" min="1">
+                      </label>
+            
+                      <label>
+                        Range
+                        <input id="sig-range" type="text" placeholder="e.g. 30 ft cone">
+                      </label>
+            
+                      <label>
+                        Target
+                        <input id="sig-target" type="text" placeholder="e.g. All creatures in area">
+                      </label>
+            
+                      <label>
+                        Tags
+                        <input id="sig-tags" type="text" placeholder="comma, separated, tags">
+                      </label>
+            
+                      <label>
+                        Status Inflicted
+                        <select id="sig-status">
+                          <option value="">None</option>
+                          <option value="burn">Burn</option>
+                          <option value="paralyzed">Paralyzed</option>
+                          <option value="poisoned">Poisoned</option>
+                          <option value="frozen">Frozen</option>
+                          <option value="asleep">Asleep</option>
+                          <option value="confused">Confused</option>
+                          <option value="flinched">Flinched</option>
+                        </select>
+                      </label>
+            
+                      <label>
+                        Buff / Debuff
+                        <select id="sig-buff-stat">
+                          <option value="">None</option>
+                          <option value="atk">ATK</option>
+                          <option value="def">DEF</option>
+                          <option value="spAtk">SP ATK</option>
+                          <option value="spDef">SP DEF</option>
+                          <option value="spd">SPD</option>
+                          <option value="man">MAN</option>
+                        </select>
+                      </label>
+            
+                      <label>
+                        Amount
+                        <input id="sig-buff-amount" type="number" min="-5" max="5">
+                      </label>
+            
+                      <label>
+                        Duration
+                        <input id="sig-buff-duration" type="text" placeholder="e.g. 2 rounds">
+                      </label>
+            
+            
+            
+                      <label>
+                        Description Prefix
+                        <textarea id="sig-desc-prefix"></textarea>
+                      </label>
+            
+                      <label>
+                        Description Suffix
+                        <textarea id="sig-desc-suffix"></textarea>
+                      </label>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+<!-- Move Preview -->
+        <div id="move-preview">
+          <div id="move-preview-content">
+             Select a move to see its details.
+          </div>
+        </div>
+
+<!--Pokemon Section-->
+      <div class="pokemon-section">
+
+        <!--Pokemon 1-->
+        <div class="pokemon-slot" id="pokemon-slot-1">
+          
+          <h2>Pokemon 1</h2>
+<div class="pokemon-top"> 
+
+            <label for="p1-name">Pokemon</label>
+            <input type="text" id="p1-name" list="pokemon-list">
+
+            <label for="p1-nickname">Nickname</label>
+            <input type="text" id="p1-nickname">
+
+            
+            
+            
+          </div>
+          <div class="pokemon-stats">
+            
+            <div class="stat">
+              <label>ATK</label>
+              <input type="text" id="p1-atk">
+              <input type="text" id="p1-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>DEF</label>
+              <input type="text" id="p1-def">
+              <input type="text" id="p1-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. ATK</label>
+              <input type="text" id="p1-sp-atk">
+              <input type="text" id="p1-sp-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. DEF</label>
+              <input type="text" id="p1-sp-def">
+              <input type="text" id="p1-sp-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>MAN</label>
+              <input type="text" id="p1-man">
+              <input type="text" id="p1-man-mod">
+            </div>
+
+            <div class="stat">
+              <label>SPD</label>
+              <input type="text" id="p1-spd">
+              <input type="text" id="p1-spd-mod">
+            </div>
+          </div>
+          
+        </div>
+
+        <!--Pokemon 2-->
+        <div class="pokemon-slot" id="pokemon-slot-2">
+          
+          <h2>Pokemon 2</h2>
+<div class="pokemon-top"> 
+          
+            <label for="p2-name">Pokemon</label>
+            <input type="text" id="p2-name" list="pokemon-list">
+
+            <label for="p2-nickname">Nickname</label>
+            <input type="text" id="p2-nickname">
+            
+            
+          </div>
+        
+
+          <div class="pokemon-stats">
+            
+            <div class="stat">
+              <label>ATK</label>
+              <input type="text" id="p2-atk">
+              <input type="text" id="p2-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>DEF</label>
+              <input type="text" id="p2-def">
+              <input type="text" id="p2-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. ATK</label>
+              <input type="text" id="p2-sp-atk">
+              <input type="text" id="p2-sp-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. DEF</label>
+              <input type="text" id="p2-sp-def">
+              <input type="text" id="p2-sp-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>MAN</label>
+              <input type="text" id="p2-man">
+              <input type="text" id="p2-man-mod">
+            </div>
+
+            <div class="stat">
+              <label>SPD</label>
+              <input type="text" id="p2-spd">
+              <input type="text" id="p2-spd-mod">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--Pokemon 3-->
+        <div class="pokemon-slot" id="pokemon-slot-3">
+          
+          <h2>Pokemon 3</h2>
+<div class="pokemon-top"> 
+          
+            <label for="p3-name">Pokemon</label>
+            <input type="text" id="p3-name" list="pokemon-list">
+
+            <label for="p3-nickname">Nickname</label>
+            <input type="text" id="p3-nickname">
+
+            
+            
+          </div>
+
+          <div class="pokemon-stats">
+            
+            <div class="stat">
+              <label>ATK</label>
+              <input type="text" id="p3-atk">
+              <input type="text" id="p3-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>DEF</label>
+              <input type="text" id="p3-def">
+              <input type="text" id="p3-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. ATK</label>
+              <input type="text" id="p3-sp-atk">
+              <input type="text" id="p3-sp-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. DEF</label>
+              <input type="text" id="p3-sp-def">
+              <input type="text" id="p3-sp-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>MAN</label>
+              <input type="text" id="p3-man">
+              <input type="text" id="p3-man-mod">
+            </div>
+
+            <div class="stat">
+              <label>SPD</label>
+              <input type="text" id="p3-spd">
+              <input type="text" id="p3-spd-mod">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--Pokemon 4-->
+        <div class="pokemon-slot" id="pokemon-slot-4">
+          <h2>Pokemon 4</h2>
+<div class="pokemon-top"> 
+          
+            <label for="p4-name">Pokemon</label>
+            <input type="text" id="p4-name" list="pokemon-list">
+
+            <label for="p4-nickname"> Nickname</label>
+            <input type="text" id="p4-nickname">
+
+            
+            
+          </div>
+
+          <div class="pokemon-stats">
+            
+            <div class="stat">
+              <label>ATK</label>
+              <input type="text" id="p4-atk">
+              <input type="text" id="p4-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>DEF</label>
+              <input type="text" id="p4-def">
+              <input type="text" id="p4-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. ATK</label>
+              <input type="text" id="p4-sp-atk">
+              <input type="text" id="p4-sp-atk-mod">
+            </div>
+
+            <div class="stat">
+              <label>SP. DEF</label>
+              <input type="text" id="p4-sp-def">
+              <input type="text" id="p4-sp-def-mod">
+            </div>
+
+            <div class="stat">
+              <label>MAN</label>
+              <input type="text" id="p4-man">
+              <input type="text" id="p4-man-mod">
+            </div>
+
+            <div class="stat">
+              <label>SPD</label>
+              <input type="text" id="p4-spd">
+              <input type="text" id="p4-spd-mod">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    
+
+
+<div class="back-to-top">
+  <a href="#top"><button id="back-to-top-button" type="button">Jump to Start</button></a>
+</div>
+<!-- Pokemon List -->
+       <datalist id="pokemon-list">
+        <option value="Bulbasaur"></option>
+        <option value="Ivysaur"></option>
+        <option value="Venusaur"></option>
+        <option value="Vulpix"></option>
+      </datalist>
+    </div>
+
+<!--SCRIPTS-->
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+

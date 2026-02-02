@@ -1,0 +1,965 @@
+/* ==============================
+   Base layout + responsive polish
+   ============================== */
+
+:root {
+  --bg: #0f1115;
+  --panel: rgba(255, 255, 255, 0.04);
+  --panel-2: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+  --radius: 14px;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#sheet {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 14px;
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  #sheet {
+    padding: 18px;
+    gap: 18px;
+  }
+}
+
+.card,
+.player\.info,
+.top-section,
+.active-pokemon-panel,
+.roles-with-controls,
+.stats,
+.mini-stats,
+.move-select-container,
+#great-move-container,
+#sig-move-container,
+#move-preview,
+.pokemon-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+}
+
+@media (min-width: 900px) {
+  .card,
+  .player\.info,
+  .top-section,
+  .active-pokemon-panel,
+  .roles-with-controls,
+  .stats,
+  .mini-stats,
+  .move-select-container,
+  #great-move-container,
+  #sig-move-container,
+  #move-preview,
+  .pokemon-section {
+    padding: 14px;
+  }
+}
+
+/* Player/Trainer header */
+.player\.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .player\.info {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: end;
+  }
+
+  .player\.info label {
+    grid-column: span 1;
+    align-self: center;
+  }
+
+  .player\.info input,
+  .player\.info button {
+    grid-column: span 2;
+  }
+
+  #export-sheet,
+  #import-sheet {
+    grid-column: span 1;
+  }
+}
+
+/* Section grids */
+.top-section {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: start;
+}
+
+.pokemon-section {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Active Pokémon panel layout */
+.active-pokemon-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.active-level {
+  display: grid;
+  gap: 6px;
+  max-width: 260px;
+}
+
+.trainer-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.trainer-actions .trainer-action-move-section {
+  margin-top: 4px;
+}
+
+.pokemon-slot {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* Controls */
+label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.18);
+  color: var(--text);
+  padding: 10px 10px;
+  outline: none;
+}
+
+/* Dropdown polish (keeps native menus readable in dark UI) */
+select {
+  appearance: none;
+}
+
+select option {
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--border-strong);
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--border-strong);
+}
+
+h2,
+h3 {
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Make small stat grids readable on phones */
+.pokemon-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 520px) {
+  .pokemon-top {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+}
+
+.pokemon-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+@media (min-width: 520px) {
+  .pokemon-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.stat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.stat input {
+  padding: 8px 10px;
+}
+
+
+/* ==============================
+   ATK–SPD stat cards
+   ============================== */
+
+.stats.stat-cards {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .stats.stat-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 460px) {
+  .stats.stat-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  padding: 12px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-height: 120px;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stat-card__mod,
+.stat-card__score {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--text);
+  padding: 6px 8px;
+}
+
+.stat-card__mod {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.stat-card__score-wrap {
+  margin-top: auto;
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card__score {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  padding: 6px 6px;
+}
+
+.stat-card__mod:focus,
+.stat-card__score:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Progress bars clickable feel in edit mode */
+body:not(.sheet-locked) .role-segment {
+  cursor: pointer;
+}
+
+.uses-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Keep disabled controls readable */
+.sheet-locked select:disabled,
+.sheet-locked input:disabled,
+.sheet-locked textarea:disabled,
+.sheet-locked button:disabled {
+  opacity: 1;
+  color: var(--text);
+  -webkit-text-fill-color: var(--text);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.pokemon-slot.is-active {
+  border: 2px solid #4da3ff;
+  box-shadow: 0 0 10px rgba(77, 163, 255, 0.6);
+}
+
+/* ==============================
+   Active Pokémon Name Display
+   ============================== */
+
+.active-pokemon-name {
+  margin-top: 6px;
+  margin-bottom: 12px;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+
+  line-height: 1.2;
+}
+
+.active-pokemon-name {
+  letter-spacing: 0.5px;
+}
+
+.active-pokemon-name {
+  word-break: break-word;
+}
+
+.role-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.role-segment {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #444;
+  border: 1px solid #666;
+  touch-action: manipulation;
+}
+
+.role-segment.empty {
+  opacity: 0.35;
+}
+
+
+.role-segment.striker {
+  background: red;
+}
+
+.role-segment.mystic {
+  background: purple;
+}
+
+.role-segment.anchor {
+  background: blue;
+}
+
+.role-segment.reactor {
+  background: yellow;
+}
+
+.role-segment.balancer {
+  background: green;
+}
+
+.role-segment.manipulator {
+  background: black;
+}
+
+.effective-role {
+  margin-top: 4px;
+  font-weight: bold;
+  opacity: 0.85;
+}
+
+.signature-editor {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #444;
+}
+
+.signature-editor label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+
+
+
+
+/* ==============================
+   Role Controls (Save / Edit)
+   ============================== */
+
+.roles-with-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.roles-with-controls .role-selection-title {
+  font-size: 1.7rem;
+  margin-bottom: 2px;
+}
+
+.roles-with-controls .progression-panel {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.roles-with-controls .role-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.roles-with-controls select {
+  min-height: 46px;
+  font-size: 16px;
+  padding: 12px 12px;
+}
+
+.roles-with-controls .role-level-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.roles-with-controls .role-level-stepper input {
+  width: 78px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+  padding: 12px 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.roles-with-controls .role-stepper-btn {
+  min-width: 56px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.roles-with-controls .role-stepper-btn:active {
+  transform: translateY(1px);
+}
+
+.roles-with-controls input[type="number"]::-webkit-outer-spin-button,
+.roles-with-controls input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.roles-with-controls input[type="number"] {
+  appearance: textfield;
+}
+
+@media (max-width: 520px) {
+  .role-progress {
+    gap: 12px;
+  }
+
+  .role-segment {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .roles-with-controls .role-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .roles-with-controls select {
+    min-height: 52px;
+    font-size: 16px;
+    padding: 14px 14px;
+  }
+
+  .roles-with-controls .role-level-stepper input {
+    width: 96px;
+    padding: 14px 6px;
+    font-size: 18px;
+  }
+
+  .roles-with-controls .role-stepper-btn {
+    min-width: 70px;
+    font-size: 26px;
+  }
+
+  .roles-with-controls .role-selection-title {
+    font-size: 1.9rem;
+  }
+}
+
+.roles-stack {
+  flex: 1 1 auto;
+}
+
+.role-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.role-controls button {
+  width: 90px;
+}
+
+/* Locked mode: purely presentational hint */
+.sheet-locked #toggle-edit {
+  font-weight: 700;
+}
+/* =========================================================
+   Locked mode: keep controls visible but non-interactive
+   ========================================================= */
+.sheet-locked select:disabled,
+.sheet-locked input:disabled,
+.sheet-locked textarea:disabled {
+  opacity: 1;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  background: inherit;
+  filter: none;
+}
+
+.sheet-locked select:disabled {
+  appearance: none;
+}
+
+/* Signature editor is OFF by default */
+#signature-move-editor {
+  display: none;
+}
+
+
+
+/* ==============================
+   Move tiles (Nest / Great)
+   ============================== */
+
+#nest-move-slots,
+.move-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+
+@media (max-width: 420px) {
+  #nest-move-slots,
+  .move-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.move-tile {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 10px 12px;
+  min-height: 58px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.move-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.10),
+    rgba(255, 255, 255, 0) 55%
+  );
+  pointer-events: none;
+}
+
+.move-tile.is-disabled {
+  opacity: 0.85;
+}
+
+.move-tile__row {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.move-tile__type {
+  flex: 0 0 auto;
+  font-size: 0.70rem;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.35);
+  letter-spacing: 0.06em;
+  text-align: center;
+  min-width: 56px;
+}
+
+.move-tile.is-empty .move-tile__type {
+  display: none;
+}
+
+.move-tile__name {
+  flex: 1 1 auto;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.move-tile__preview {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.move-tile__select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.sheet-locked .move-tile__select,
+.sheet-locked .move-tile__select:disabled {
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+.signature-editor-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* ==============================
+   Active Slot Buttons (circles)
+   ============================== */
+
+.active-pokemon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.active-slot-buttons {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.active-slot-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  padding: 0;
+}
+
+.active-slot-btn.is-active {
+  outline: 2px solid rgba(124, 58, 237, 0.9);
+  outline-offset: 2px;
+  background: rgba(124, 58, 237, 0.35);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==============================
+   Move Tabs
+   ============================== */
+
+.modes-section,
+.moves-section {
+  margin-top: 12px;
+}
+
+.move-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0 12px;
+}
+
+.move-tab {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.18);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.move-tab.is-active {
+  border-color: rgba(124, 58, 237, 0.9);
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.25);
+}
+
+.move-tab-panels {
+  display: block;
+}
+
+.move-tab-panel[hidden] {
+  display: none;
+}
+
+/* ==============================
+   Move Tile Click/Preview Fix
+   ============================== */
+
+.move-tile__row {
+  position: relative;
+  z-index: 2;
+}
+
+.move-tile__preview {
+  position: relative;
+  z-index: 3;
+}
+
+.move-tile__select:disabled {
+  pointer-events: none; /* lets the 👁 preview work in Done mode */
+}
+
+
+/* ==============================
+   Mobile usability upgrades
+   ============================== */
+
+.pokemon-level-hidden {
+  display: none;
+}
+
+.mini-stats {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  align-items: start;
+}
+
+.mini-stat--wide {
+  grid-column: 1 / -1;
+}
+
+.active-slot-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active-slot-label {
+  font-size: 0.9rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.active-slot-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 18px;
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 18px;
+  }
+
+  #sheet {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  button {
+    min-height: 44px;
+  }
+
+  textarea {
+    min-height: 140px;
+  }
+
+  .active-slot-btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* Sheet action row (Export / Import / View Mode toggle) */
+.sheet-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.view-mode-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.view-mode-label {
+  font-weight: 600;
+}
+
+.view-mode-switch input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.view-mode-slider {
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: background 140ms ease;
+}
+
+.view-mode-slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  transition: transform 140ms ease;
+}
+
+.view-mode-switch input[type="checkbox"]:checked + .view-mode-slider {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.view-mode-switch input[type="checkbox"]:checked + .view-mode-slider::after {
+  transform: translateX(24px);
+}

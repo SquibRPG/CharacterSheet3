@@ -1,0 +1,2633 @@
+{
+  "adaptability": {
+    "id": "adaptability",
+    "name": "Adaptability",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker",
+      "mystic"
+    ],
+    "unlocksAt": 4,
+    "description": "The Pokemon's STAB modifier becomes 2x."
+  },
+  "aerilate": {
+    "id": "aerilate",
+    "name": "Aerilate",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Turns all of this Pokemon's Normal-typed attacks into Flying-type and deals 1.3x damage. Does not affect Hidden Power."
+  },
+  "aftermath": {
+    "id": "aftermath",
+    "name": "Aftermath",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals 25% damage when KOed by contact damage."
+  },
+  "air_lock": {
+    "id": "air_lock",
+    "name": "Air Lock",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Blocks the effects of weather."
+  },
+  "analytic": {
+    "id": "analytic",
+    "name": "Analytic",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises the power of all moves by 30% if the wielder moves last."
+  },
+  "anger_point": {
+    "id": "anger_point",
+    "name": "Anger Point",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Attack to +6 if struck by a critical hit."
+  },
+  "anticipation": {
+    "id": "anticipation",
+    "name": "Anticipation",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "balancer"
+    ],
+    "unlocksAt": 4,
+    "description": "Alerts the Pokemon of certain dangerous moves."
+  },
+  "arena_trap": {
+    "id": "arena_trap",
+    "name": "Arena Trap",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents switching and increases wild encounter rate."
+  },
+  "aroma_veil": {
+    "id": "aroma_veil",
+    "name": "Aroma Veil",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Protects allies from attacks that limit their move choices."
+  },
+  "aura_break": {
+    "id": "aura_break",
+    "name": "Aura Break",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reverses the effects of Dark Aura and Fairy Aura."
+  },
+  "bad_dreams": {
+    "id": "bad_dreams",
+    "name": "Bad Dreams",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals 1d4 damage to sleeping opponents per turn."
+  },
+  "ball_fetch": {
+    "id": "ball_fetch",
+    "name": "Ball Fetch",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Retrieves an Apricot from a failed throw."
+  },
+  "battery": {
+    "id": "battery",
+    "name": "Battery",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises power of teammates' Special moves by 1d4."
+  },
+  "battle_armor": {
+    "id": "battle_armor",
+    "name": "Battle Armor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents critical hits."
+  },
+  "beast_boost": {
+    "id": "beast_boost",
+    "name": "Beast Boost",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon."
+  },
+  "berserk": {
+    "id": "berserk",
+    "name": "Berserk",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Special Attack mod by +3 when HP drops below half."
+  },
+  "big_pecks": {
+    "id": "big_pecks",
+    "name": "Big Pecks",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder's Defense cannot be lowered."
+  },
+  "blaze": {
+    "id": "blaze",
+    "name": "Blaze",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker"
+    ],
+    "unlocksAt": 4,
+    "description": "Boosts power of Fire-type moves 1DD when at 1/3 of max HP or less."
+  },
+  "bulletproof": {
+    "id": "bulletproof",
+    "name": "Bulletproof",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor",
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "This Pokemon is protected from some Ball and Bomb moves."
+  },
+  "cheek_pouch": {
+    "id": "cheek_pouch",
+    "name": "Cheek Pouch",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases HP when this Pokemon consumes a berry."
+  },
+  "chilling_neigh": {
+    "id": "chilling_neigh",
+    "name": "Chilling Neigh",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Attack after knocking out a Pokémon."
+  },
+  "chlorophyll": {
+    "id": "chlorophyll",
+    "name": "Chlorophyll",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "reactor"
+    ],
+    "unlocksAt": 4,
+    "description": "Speed doubles in sun."
+  },
+  "clear_body": {
+    "id": "clear_body",
+    "name": "Clear Body",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Stops the enemy from lowering this Pokemon's stats."
+  },
+  "cloud_nine": {
+    "id": "cloud_nine",
+    "name": "Cloud Nine",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "balancer",
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Blocks the effects of weather."
+  },
+  "color_change": {
+    "id": "color_change",
+    "name": "Color Change",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes user's type to type of last attack that hit this Pokemon."
+  },
+  "comatose": {
+    "id": "comatose",
+    "name": "Comatose",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon is always asleep but can still attack."
+  },
+  "competitive": {
+    "id": "competitive",
+    "name": "Competitive",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "mystic",
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Raises the user's Special Attack stat by two stages when a stat is lowered, including the Special Attack stat. This does not include self-induced stat drops like those from Close Combat."
+  },
+  "compound_eyes": {
+    "id": "compound_eyes",
+    "name": "Compound Eyes",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises accuracy by 30% and increases the probability of wild Pokemon holding items."
+  },
+  "contrary": {
+    "id": "contrary",
+    "name": "Contrary",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder's stat changes are reversed."
+  },
+  "corrosion": {
+    "id": "corrosion",
+    "name": "Corrosion",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon can poison Steel and Poison types."
+  },
+  "cotton_down": {
+    "id": "cotton_down",
+    "name": "Cotton Down",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Lowers foe's Speed when hit."
+  },
+  "cursed_body": {
+    "id": "cursed_body",
+    "name": "Cursed Body",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder has a 30% chance to disable any move that hits it. 8-10 on CD"
+  },
+  "cute_charm": {
+    "id": "cute_charm",
+    "name": "Cute Charm",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Can infatuate Pokemon of opposite gender (9-10 CD) when struck and increases their wild encounter rate."
+  },
+  "damp": {
+    "id": "damp",
+    "name": "Damp",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents the use of Self-Destruct or Explosion."
+  },
+  "dancer": {
+    "id": "dancer",
+    "name": "Dancer",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Copies the foe's Dance moves."
+  },
+  "dark_aura": {
+    "id": "dark_aura",
+    "name": "Dark Aura",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the power of all Dark-type moves in battle (+1d6)."
+  },
+  "dauntless_shield": {
+    "id": "dauntless_shield",
+    "name": "Dauntless Shield",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Defense (+2) in battle."
+  },
+  "dazzling": {
+    "id": "dazzling",
+    "name": "Dazzling",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Protects the Pokémon from high-priority moves."
+  },
+  "defeatist": {
+    "id": "defeatist",
+    "name": "Defeatist",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves the wielder's Attack and Special Attack if its HP drops below 50%."
+  },
+  "defiant": {
+    "id": "defiant",
+    "name": "Defiant",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Attack by two stages for every stat drop."
+  },
+  "delta_stream": {
+    "id": "delta_stream",
+    "name": "Delta Stream",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons Strong Winds until Pokemon leaves battle. Electric/Ice/Rock moves do half damage and Weather changing moves/abilities fail, except for Primordial Sea and Desolate Land."
+  },
+  "desolate_land": {
+    "id": "desolate_land",
+    "name": "Desolate Land",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons Heavy Sun until Pokemon leaves battle. Water-type moves and weather changing moves/abilities fail, except for Primordial Sea and Delta Stream."
+  },
+  "disguise": {
+    "id": "disguise",
+    "name": "Disguise",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Avoids damage for one turn."
+  },
+  "download": {
+    "id": "download",
+    "name": "Download",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "User gets a stat boost depending on its opponent's stats."
+  },
+  "dragons_maw": {
+    "id": "dragons_maw",
+    "name": "Dragon's Maw",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Powers up Dragon-type moves."
+  },
+  "drizzle": {
+    "id": "drizzle",
+    "name": "Drizzle",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons rain."
+  },
+  "drought": {
+    "id": "drought",
+    "name": "Drought",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons sun."
+  },
+  "dry_skin": {
+    "id": "dry_skin",
+    "name": "Dry Skin",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "User absorbs Water-type attacks and has a weakness to Fire-type moves. Heals in rain and is damaged by sun."
+  },
+  "early_bird": {
+    "id": "early_bird",
+    "name": "Early Bird",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces sleep time by 50%."
+  },
+  "effect_spore": {
+    "id": "effect_spore",
+    "name": "Effect Spore",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Induces paralysis, poison, or sleep on contact."
+  },
+  "electric_surge": {
+    "id": "electric_surge",
+    "name": "Electric Surge",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon creates an Electric Terrain when it enters a battle."
+  },
+  "emergency_exit": {
+    "id": "emergency_exit",
+    "name": "Emergency Exit",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Switches out when HP falls below 50%."
+  },
+  "fairy_aura": {
+    "id": "fairy_aura",
+    "name": "Fairy Aura",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the power of all Fairy-type moves in battle to 1.3x."
+  },
+  "filter": {
+    "id": "filter",
+    "name": "Filter",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces damage from super effective hits by 1/4."
+  },
+  "flame_body": {
+    "id": "flame_body",
+    "name": "Flame Body",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator",
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Enemies' contact moves have a 30% chance to burn them. Halves the amount of steps required to hatch Eggs."
+  },
+  "flare_boost": {
+    "id": "flare_boost",
+    "name": "Flare Boost",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Special Attack is increased by 50% when burned."
+  },
+  "flash_fire": {
+    "id": "flash_fire",
+    "name": "Flash Fire",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor",
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Grants immunity to Fire and increases Fire's power 50% when hit by a Fire move."
+  },
+  "flower_gift": {
+    "id": "flower_gift",
+    "name": "Flower Gift",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Attack and Special Defense of this Pokemon and its partners in sun."
+  },
+  "flower_veil": {
+    "id": "flower_veil",
+    "name": "Flower Veil",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents lowering of ally Grass-type Pokemon's stats."
+  },
+  "fluffy": {
+    "id": "fluffy",
+    "name": "Fluffy",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves damage from contact moves, but doubles damage from Fire-type moves."
+  },
+  "forecast": {
+    "id": "forecast",
+    "name": "Forecast",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes type according to weather."
+  },
+  "forewarn": {
+    "id": "forewarn",
+    "name": "Forewarn",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Tells which of the opponent's moves has the highest Base Power."
+  },
+  "friend_guard": {
+    "id": "friend_guard",
+    "name": "Friend Guard",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Reduces damage done to a teammate by 25%."
+  },
+  "frisk": {
+    "id": "frisk",
+    "name": "Frisk",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reveals the foe's items."
+  },
+  "full_metal_body": {
+    "id": "full_metal_body",
+    "name": "Full Metal Body",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents other Pokémon from lowering its stats."
+  },
+  "fur_coat": {
+    "id": "fur_coat",
+    "name": "Fur Coat",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves the damage done to this Pokemon by physical attacks."
+  },
+  "gale_wings": {
+    "id": "gale_wings",
+    "name": "Gale Wings",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon's Flying-type moves have their priority increased by 1."
+  },
+  "gluttony": {
+    "id": "gluttony",
+    "name": "Gluttony",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Consumes pinch Berries at 50% HP or less."
+  },
+  "gooey": {
+    "id": "gooey",
+    "name": "Gooey",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Contact with this Pokemon decreases the attacker's Speed by 1 stage."
+  },
+  "grass_pelt": {
+    "id": "grass_pelt",
+    "name": "Grass Pelt",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon's Defense is boosted by 50% in Grassy Terrain"
+  },
+  "grassy_surge": {
+    "id": "grassy_surge",
+    "name": "Grassy Surge",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon creates a Grassy Terrain when it enters a battle."
+  },
+  "grim_neigh": {
+    "id": "grim_neigh",
+    "name": "Grim Neigh",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Special Attack after knocking out a Pokémon."
+  },
+  "gulp_missile": {
+    "id": "gulp_missile",
+    "name": "Gulp Missile",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Returns with a catch in its mouth after using Surf or Dive."
+  },
+  "guts": {
+    "id": "guts",
+    "name": "Guts",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Attack is increased 50% when afflicted by a non-volatile status."
+  },
+  "harvest": {
+    "id": "harvest",
+    "name": "Harvest",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "After each turn, the wielder may receive the Berry it used at a 50% chance (100% if in sun)."
+  },
+  "healer": {
+    "id": "healer",
+    "name": "Healer",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "30% chance to heal an adjacent teammate of a status condition every turn."
+  },
+  "heatproof": {
+    "id": "heatproof",
+    "name": "Heatproof",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces Fire damage 50%."
+  },
+  "heavy_metal": {
+    "id": "heavy_metal",
+    "name": "Heavy Metal",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder's weight is doubled."
+  },
+  "honey_gather": {
+    "id": "honey_gather",
+    "name": "Honey Gather",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Adds a chance of finding Honey after each in-game battle."
+  },
+  "huge_power": {
+    "id": "huge_power",
+    "name": "Huge Power",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Doubles Attack."
+  },
+  "hunger_switch": {
+    "id": "hunger_switch",
+    "name": "Hunger Switch",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes forms each turn."
+  },
+  "hustle": {
+    "id": "hustle",
+    "name": "Hustle",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Physical moves do 50% more damage at the cost of 20% accuracy. Increases wild encounter rate with higher level Pokemon."
+  },
+  "hydration": {
+    "id": "hydration",
+    "name": "Hydration",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Heals status effects in rain."
+  },
+  "hyper_cutter": {
+    "id": "hyper_cutter",
+    "name": "Hyper Cutter",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents the enemy from lowering this Pokemon's Attack. Increases Cut's area of effect."
+  },
+  "ice_body": {
+    "id": "ice_body",
+    "name": "Ice Body",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Heals 1/16 of max HP in hail."
+  },
+  "ice_face": {
+    "id": "ice_face",
+    "name": "Ice Face",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Avoids damage from Physical moves for one turn."
+  },
+  "ice_scales": {
+    "id": "ice_scales",
+    "name": "Ice Scales",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves damage from Special moves."
+  },
+  "illuminate": {
+    "id": "illuminate",
+    "name": "Illuminate",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases wild encounter rate (no effect in battles)."
+  },
+  "illusion": {
+    "id": "illusion",
+    "name": "Illusion",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder appears as the last Pokemon in the party to the opponent."
+  },
+  "immunity": {
+    "id": "immunity",
+    "name": "Immunity",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon cannot be poisoned."
+  },
+  "imposter": {
+    "id": "imposter",
+    "name": "Imposter",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder transforms into the opponent when it switches in."
+  },
+  "infiltrator": {
+    "id": "infiltrator",
+    "name": "Infiltrator",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator",
+      "striker"
+    ],
+    "unlocksAt": 4,
+    "description": "The wielder bypasses the foe's Light Screen, Reflect, Mist, Safeguard, and Substitute."
+  },
+  "innards_out": {
+    "id": "innards_out",
+    "name": "Innards Out",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals damage upon fainting."
+  },
+  "inner_focus": {
+    "id": "inner_focus",
+    "name": "Inner Focus",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Prevents flinching."
+  },
+  "insomnia": {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents sleep."
+  },
+  "intimidate": {
+    "id": "intimidate",
+    "name": "Intimidate",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor",
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Lowers the foe's Attack by 1 stage. Decreases wild encounter rate."
+  },
+  "intrepid_sword": {
+    "id": "intrepid_sword",
+    "name": "Intrepid Sword",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Attack in battle."
+  },
+  "iron_barbs": {
+    "id": "iron_barbs",
+    "name": "Iron Barbs",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals 1/8 recoil damage when the opponent makes contact."
+  },
+  "iron_fist": {
+    "id": "iron_fist",
+    "name": "Iron Fist",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the power of punching moves by 20%."
+  },
+  "justified": {
+    "id": "justified",
+    "name": "Justified",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Attack by one stage when hit by a Dark-type move."
+  },
+  "keen_eye": {
+    "id": "keen_eye",
+    "name": "Keen Eye",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Pokemon's accuracy cannot be lowered. Opponent's evasion boosts are ignored. Decreases wild encounter rate."
+  },
+  "klutz": {
+    "id": "klutz",
+    "name": "Klutz",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon both is unaffected by and will not utilize held items."
+  },
+  "leaf_guard": {
+    "id": "leaf_guard",
+    "name": "Leaf Guard",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents status effects in sun."
+  },
+  "levitate": {
+    "id": "levitate",
+    "name": "Levitate",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon is immune to Ground-type moves."
+  },
+  "libero": {
+    "id": "libero",
+    "name": "Libero",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes the Pokémon's type to its last used move."
+  },
+  "light_metal": {
+    "id": "light_metal",
+    "name": "Light Metal",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder's weight is halved."
+  },
+  "lightning_rod": {
+    "id": "lightning_rod",
+    "name": "Lightning Rod",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Draws in all Electric-type moves to up Sp. Attack."
+  },
+  "lightningrod": {
+    "id": "lightningrod",
+    "name": "Lightningrod",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "All Electric-type attacks target this Pokemon. Grants immunity to Electric-type moves and boosts Special Attack by 1 stage when hit by an Electric-type move."
+  },
+  "limber": {
+    "id": "limber",
+    "name": "Limber",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Blocks paralysis."
+  },
+  "liquid_ooze": {
+    "id": "liquid_ooze",
+    "name": "Liquid Ooze",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Leeching moves cause the enemy to lose HP instead."
+  },
+  "liquid_voice": {
+    "id": "liquid_voice",
+    "name": "Liquid Voice",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "All sound-based moves become Water-type moves."
+  },
+  "long_reach": {
+    "id": "long_reach",
+    "name": "Long Reach",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon uses its moves without making contact with the target."
+  },
+  "magic_bounce": {
+    "id": "magic_bounce",
+    "name": "Magic Bounce",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Bounces back certain non-damaging moves."
+  },
+  "magic_guard": {
+    "id": "magic_guard",
+    "name": "Magic Guard",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents indirect damage."
+  },
+  "magician": {
+    "id": "magician",
+    "name": "Magician",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "If this Pokemon is not holding an item, it steals the held item of a target it hits with a move."
+  },
+  "magma_armor": {
+    "id": "magma_armor",
+    "name": "Magma Armor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Cannot be frozen. Halves the amount of steps required to hatch Eggs."
+  },
+  "magnet_pull": {
+    "id": "magnet_pull",
+    "name": "Magnet Pull",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents Steel-type Pokemon from switching. Increases the chance of encountering a Steel-type Pokemon in the wild."
+  },
+  "marvel_scale": {
+    "id": "marvel_scale",
+    "name": "Marvel Scale",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Defense 50% when afflicted by a non-volatile status."
+  },
+  "mega_launcher": {
+    "id": "mega_launcher",
+    "name": "Mega Launcher",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts the power of Aura and Pulse moves, such as Aura Sphere and Dark Pulse, by 50%."
+  },
+  "merciless": {
+    "id": "merciless",
+    "name": "Merciless",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon's attacks become critical hits if the target is poisoned."
+  },
+  "minus": {
+    "id": "minus",
+    "name": "Minus",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "If allied with a Pokemon with Plus or Minus, its Special Attack increases by 50%."
+  },
+  "mirror_armor": {
+    "id": "mirror_armor",
+    "name": "Mirror Armor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reflects any stat-lowering effects."
+  },
+  "misty_surge": {
+    "id": "misty_surge",
+    "name": "Misty Surge",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon creates a Misty Terrain when it enters a battle."
+  },
+  "mold_breaker": {
+    "id": "mold_breaker",
+    "name": "Mold Breaker",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Abilities that hinder attacks are nullified."
+  },
+  "moody": {
+    "id": "moody",
+    "name": "Moody",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "A random stat is lowered by 1 stage and another is boosted by 2 stages every turn."
+  },
+  "motor_drive": {
+    "id": "motor_drive",
+    "name": "Motor Drive",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Grants immunity to Electric-type moves and boosts Speed by 1 stage when hit by a Electric-type move."
+  },
+  "moxie": {
+    "id": "moxie",
+    "name": "Moxie",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Attack by 1 stage if the wielder knocks out another Pokemon."
+  },
+  "multiscale": {
+    "id": "multiscale",
+    "name": "Multiscale",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces damage by 50% if the wielder is at full health."
+  },
+  "multitype": {
+    "id": "multitype",
+    "name": "Multitype",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Type changes depending on the held plate. Prevents item loss."
+  },
+  "mummy": {
+    "id": "mummy",
+    "name": "Mummy",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The opponent's ability becomes Mummy when it hits the wielder with a contact move."
+  },
+  "natural_cure": {
+    "id": "natural_cure",
+    "name": "Natural Cure",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "balancer"
+    ],
+    "unlocksAt": 4,
+    "description": "Cures status on switching out."
+  },
+  "no_guard": {
+    "id": "no_guard",
+    "name": "No Guard",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "All attacks used by and used on this Pokemon will never miss."
+  },
+  "normalize": {
+    "id": "normalize",
+    "name": "Normalize",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "All moves used by this Pokemon become Normal-type."
+  },
+  "oblivious": {
+    "id": "oblivious",
+    "name": "Oblivious",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Grants immunity to infatuation, Captivate, and Taunt."
+  },
+  "overcoat": {
+    "id": "overcoat",
+    "name": "Overcoat",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Grants immunity to damage from weather effects and powder moves."
+  },
+  "overgrow": {
+    "id": "overgrow",
+    "name": "Overgrow",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises the power of Grass-type moves by 50% when at 1/3 HP or less."
+  },
+  "own_tempo": {
+    "id": "own_tempo",
+    "name": "Own Tempo",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Cannot be confused."
+  },
+  "parental_bond": {
+    "id": "parental_bond",
+    "name": "Parental Bond",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Allows the Pokemon to hit twice with the same move in one turn. Second hit has 0.5x base power. Does not affect Status, multihit, self-KO, or spread moves (in doubles)."
+  },
+  "perish_body": {
+    "id": "perish_body",
+    "name": "Perish Body",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle."
+  },
+  "pickpocket": {
+    "id": "pickpocket",
+    "name": "Pickpocket",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder immediately steals an item from an attacker using a contact move."
+  },
+  "pickup": {
+    "id": "pickup",
+    "name": "Pickup",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "If the wielder has no held item, it gets the last item consumed at the end of the turn. Adds a chance of finding an item after each battle."
+  },
+  "pixilate": {
+    "id": "pixilate",
+    "name": "Pixilate",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Turns all of this Pokemon's Normal-typed attacks into Fairy-type and deals 1.3x damage. Does not affect Hidden Power."
+  },
+  "plus": {
+    "id": "plus",
+    "name": "Plus",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "If allied with a Pokemon with Plus or Minus, its Special Attack increases by 50%."
+  },
+  "poison_heal": {
+    "id": "poison_heal",
+    "name": "Poison Heal",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Heals 1/8 of max HP per turn when poisoned."
+  },
+  "poison_point": {
+    "id": "poison_point",
+    "name": "Poison Point",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Enemies' contact moves have a 30% chance of poisoning them."
+  },
+  "poison_touch": {
+    "id": "poison_touch",
+    "name": "Poison Touch",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder's contact moves gain a 30% chance to poison the opponent."
+  },
+  "power_spot": {
+    "id": "power_spot",
+    "name": "Power Spot",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Just being next to the Pokémon powers up moves."
+  },
+  "prankster": {
+    "id": "prankster",
+    "name": "Prankster",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Non-damaging moves have their priority increased by one level."
+  },
+  "pressure": {
+    "id": "pressure",
+    "name": "Pressure",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Enemy attacks lose 1 extra PP. Increases wild encounter rate."
+  },
+  "primordial_sea": {
+    "id": "primordial_sea",
+    "name": "Primordial Sea",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons Heavy Rain until Pokemon leaves battle. Fire-type moves and weather changing moves/abilities fail, except for Desolate Land and Delta Stream."
+  },
+  "prism_armor": {
+    "id": "prism_armor",
+    "name": "Prism Armor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces damage from super-effective attacks."
+  },
+  "propeller_tail": {
+    "id": "propeller_tail",
+    "name": "Propeller Tail",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Ignores moves and abilities that draw in moves."
+  },
+  "protean": {
+    "id": "protean",
+    "name": "Protean",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Right before this Pokemon uses a move, it changes its type to match that move. Hidden Power is interpreted as its Hidden Power type, rather than Normal."
+  },
+  "psychic_surge": {
+    "id": "psychic_surge",
+    "name": "Psychic Surge",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The Pokémon creates a Psychic Terrain when it enters a battle."
+  },
+  "punk_rock": {
+    "id": "punk_rock",
+    "name": "Punk Rock",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts sound-based moves and halves damage from the same moves."
+  },
+  "pure_power": {
+    "id": "pure_power",
+    "name": "Pure Power",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Doubles Attack."
+  },
+  "queenly_majesty": {
+    "id": "queenly_majesty",
+    "name": "Queenly Majesty",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents use of priority moves."
+  },
+  "quick_feet": {
+    "id": "quick_feet",
+    "name": "Quick Feet",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases Speed by 50% when afflicted with a status condition."
+  },
+  "rain_dish": {
+    "id": "rain_dish",
+    "name": "Rain Dish",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Heals 1/16 of max HP in rain."
+  },
+  "rattled": {
+    "id": "rattled",
+    "name": "Rattled",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "reactor"
+    ],
+    "unlocksAt": 4,
+    "description": "Raises Speed one stage when hit by a Bug-, Dark-, or Ghost-type move."
+  },
+  "receiver": {
+    "id": "receiver",
+    "name": "Receiver",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Inherits an ally's ability when it faints."
+  },
+  "reckless": {
+    "id": "reckless",
+    "name": "Reckless",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the power of recoil moves by 20%."
+  },
+  "refrigerate": {
+    "id": "refrigerate",
+    "name": "Refrigerate",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Turns all of this Pokemon's Normal-typed attacks into Ice-typed and deal 1.3x damage. Does not affect Hidden Power."
+  },
+  "regenerator": {
+    "id": "regenerator",
+    "name": "Regenerator",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Wielder heals 1/3 of its maximum HP on switching out."
+  },
+  "ripen": {
+    "id": "ripen",
+    "name": "Ripen",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Doubles the effect of berries."
+  },
+  "rivalry": {
+    "id": "rivalry",
+    "name": "Rivalry",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises move power by 25% if the opponent has the same gender, and reduces by 25% if the opponent has the opposite gender. Genderless Pokemon do not affect this ability."
+  },
+  "rks_system": {
+    "id": "rks_system",
+    "name": "RKS System",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes type depending on held item."
+  },
+  "rock_head": {
+    "id": "rock_head",
+    "name": "Rock Head",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker"
+    ],
+    "unlocksAt": 4,
+    "description": "Negates recoil from recoil moves."
+  },
+  "rough_skin": {
+    "id": "rough_skin",
+    "name": "Rough Skin",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals 1/8 recoil damage when the opponent makes contact."
+  },
+  "run_away": {
+    "id": "run_away",
+    "name": "Run Away",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the chance of successfully escaping battle with a wild Pokemon."
+  },
+  "sand_force": {
+    "id": "sand_force",
+    "name": "Sand Force",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases power of Ground-, Rock-, and Steel-type attacks by 30% in a sandstorm."
+  },
+  "sand_rush": {
+    "id": "sand_rush",
+    "name": "Sand Rush",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "reactor"
+    ],
+    "unlocksAt": 4,
+    "description": "Speed doubles in sandstorm."
+  },
+  "sand_spit": {
+    "id": "sand_spit",
+    "name": "Sand Spit",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Creates a sandstorm when hit by an attack."
+  },
+  "sand_stream": {
+    "id": "sand_stream",
+    "name": "Sand Stream",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Summons sandstorm."
+  },
+  "sand_veil": {
+    "id": "sand_veil",
+    "name": "Sand Veil",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Evasion increases by 20% in a sandstorm."
+  },
+  "sap_sipper": {
+    "id": "sap_sipper",
+    "name": "Sap Sipper",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Grants immunity to Grass-type moves and boosts Attack by 1 stage when hit by a Grass-type move."
+  },
+  "schooling": {
+    "id": "schooling",
+    "name": "Schooling",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes Wishiwashi to School Form."
+  },
+  "scrappy": {
+    "id": "scrappy",
+    "name": "Scrappy",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Can hit Ghost-types with Fighting- and Normal-type moves."
+  },
+  "screen_cleaner": {
+    "id": "screen_cleaner",
+    "name": "Screen Cleaner",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Nullifies effects of Light Screen, Reflect, and Aurora Veil."
+  },
+  "serene_grace": {
+    "id": "serene_grace",
+    "name": "Serene Grace",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker",
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "This Pokemon's secondary effect chances are doubled."
+  },
+  "shadow_shield": {
+    "id": "shadow_shield",
+    "name": "Shadow Shield",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces damage when HP is full."
+  },
+  "shadow_tag": {
+    "id": "shadow_tag",
+    "name": "Shadow Tag",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Traps opponents. Does not affect Pokemon with Shadow Tag."
+  },
+  "shed_skin": {
+    "id": "shed_skin",
+    "name": "Shed Skin",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "30% chance to heal status."
+  },
+  "sheer_force": {
+    "id": "sheer_force",
+    "name": "Sheer Force",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases power of moves with secondary effects by 30%, but removes the effects."
+  },
+  "shell_armor": {
+    "id": "shell_armor",
+    "name": "Shell Armor",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Prevents critical hits."
+  },
+  "shield_dust": {
+    "id": "shield_dust",
+    "name": "Shield Dust",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Secondary effects won't occur."
+  },
+  "shields_down": {
+    "id": "shields_down",
+    "name": "Shields Down",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Changes stats when HP drops below half."
+  },
+  "simple": {
+    "id": "simple",
+    "name": "Simple",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Doubles the effect of stat boosts and drops."
+  },
+  "skill_link": {
+    "id": "skill_link",
+    "name": "Skill Link",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Multi-hit moves will always hit the maximum number of times."
+  },
+  "slow_start": {
+    "id": "slow_start",
+    "name": "Slow Start",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Attack and Speed are halved for 5 turns."
+  },
+  "slush_rush": {
+    "id": "slush_rush",
+    "name": "Slush Rush",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts the Pokémon's Speed stat in a hailstorm."
+  },
+  "sniper": {
+    "id": "sniper",
+    "name": "Sniper",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Critical hits do 2.25x damage instead of 1.5x."
+  },
+  "snow_cloak": {
+    "id": "snow_cloak",
+    "name": "Snow Cloak",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Evasion increases by 20% in hail."
+  },
+  "snow_warning": {
+    "id": "snow_warning",
+    "name": "Snow Warning",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Summons hail."
+  },
+  "solar_power": {
+    "id": "solar_power",
+    "name": "Solar Power",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Loses 10% HP in sun each turn. Special Attack increases by 50%."
+  },
+  "solid_rock": {
+    "id": "solid_rock",
+    "name": "Solid Rock",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces damage from super effective hits by 1/4."
+  },
+  "soul_heart": {
+    "id": "soul_heart",
+    "name": "Soul-Heart",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Special Attack when another Pokémon faints."
+  },
+  "soundproof": {
+    "id": "soundproof",
+    "name": "Soundproof",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Unaffected by sound moves."
+  },
+  "speed_boost": {
+    "id": "speed_boost",
+    "name": "Speed Boost",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Speed raises at end of turn."
+  },
+  "stakeout": {
+    "id": "stakeout",
+    "name": "Stakeout",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Deals double damage to Pokémon switching in."
+  },
+  "stall": {
+    "id": "stall",
+    "name": "Stall",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "This Pokemon moves last."
+  },
+  "stalwart": {
+    "id": "stalwart",
+    "name": "Stalwart",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Ignores moves and abilities that draw in moves."
+  },
+  "stamina": {
+    "id": "stamina",
+    "name": "Stamina",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Raises Defense when attacked."
+  },
+  "stance_change": {
+    "id": "stance_change",
+    "name": "Stance Change",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Only affects Aegislash. If this Pokemon uses a Physical or Special move, it changes to Blade forme. If this Pokemon uses King's Shield, it changes to Shield forme."
+  },
+  "static": {
+    "id": "static",
+    "name": "Static",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "manipulator"
+    ],
+    "unlocksAt": 4,
+    "description": "Enemies' contact moves can paralyze them."
+  },
+  "steadfast": {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Speed is boosted one stage when flinched."
+  },
+  "steam_engine": {
+    "id": "steam_engine",
+    "name": "Steam Engine",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Drastically raises Speed when hit by a Fire- or Water-type move."
+  },
+  "steelworker": {
+    "id": "steelworker",
+    "name": "Steelworker",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Powers up Steel-type moves."
+  },
+  "steely_spirit": {
+    "id": "steely_spirit",
+    "name": "Steely Spirit",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Powers up ally Pokémon's Steel-type moves."
+  },
+  "stench": {
+    "id": "stench",
+    "name": "Stench",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Adds a 10% flinch chance for moves that do not have one. Decreases wild encounter rate."
+  },
+  "sticky_hold": {
+    "id": "sticky_hold",
+    "name": "Sticky Hold",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon's item cannot be removed. Increases the chance of encountering Pokemon while fishing."
+  },
+  "storm_drain": {
+    "id": "storm_drain",
+    "name": "Storm Drain",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "All Water-type attacks target this Pokemon. Grants immunity to Water-type moves and boosts Special Attack by 1 stage when hit by a Water-type move."
+  },
+  "strong_jaw": {
+    "id": "strong_jaw",
+    "name": "Strong Jaw",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon receives a 50% power boost for jaw attacks such as Bite and Crunch."
+  },
+  "sturdy": {
+    "id": "sturdy",
+    "name": "Sturdy",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder cannot be KO'd in one hit. OHKO moves will fail."
+  },
+  "suction_cups": {
+    "id": "suction_cups",
+    "name": "Suction Cups",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Cannot be forced to switch. Increases chance of encountering Pokemon while fishing."
+  },
+  "super_luck": {
+    "id": "super_luck",
+    "name": "Super Luck",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Critical hit rate increases one stage."
+  },
+  "swarm": {
+    "id": "swarm",
+    "name": "Swarm",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker"
+    ],
+    "unlocksAt": 4,
+    "description": "Boosts power of Bug-type moves by 50% when at 1/3 HP or less."
+  },
+  "sweet_veil": {
+    "id": "sweet_veil",
+    "name": "Sweet Veil",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents allies from being put to Sleep."
+  },
+  "swift_swim": {
+    "id": "swift_swim",
+    "name": "Swift Swim",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Speed doubles in rain."
+  },
+  "symbiosis": {
+    "id": "symbiosis",
+    "name": "Symbiosis",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon immediately passes its item to an ally after their item is consumed."
+  },
+  "synchronize": {
+    "id": "synchronize",
+    "name": "Synchronize",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "When statused, the enemy is also statused. Can pass nature to wild Pokemon."
+  },
+  "tangled_feet": {
+    "id": "tangled_feet",
+    "name": "Tangled Feet",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Evasion increases when confused."
+  },
+  "technician": {
+    "id": "technician",
+    "name": "Technician",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases power of moves with 60 base power or less by 50%."
+  },
+  "telepathy": {
+    "id": "telepathy",
+    "name": "Telepathy",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Does not take damage from allies' attacks."
+  },
+  "teravolt": {
+    "id": "teravolt",
+    "name": "Teravolt",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Abilities that hinder attacks are nullified."
+  },
+  "thick_fat": {
+    "id": "thick_fat",
+    "name": "Thick Fat",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves Ice- and Fire-type damage."
+  },
+  "tinted_lens": {
+    "id": "tinted_lens",
+    "name": "Tinted Lens",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Doubles damage on resisted hits."
+  },
+  "torrent": {
+    "id": "torrent",
+    "name": "Torrent",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "striker"
+    ],
+    "unlocksAt": 4,
+    "description": "Boosts power of Water-type moves by 50% when at 1/3 HP or less."
+  },
+  "tough_claws": {
+    "id": "tough_claws",
+    "name": "Tough Claws",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon's contact attacks do 1.33x damage."
+  },
+  "toxic_boost": {
+    "id": "toxic_boost",
+    "name": "Toxic Boost",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Attack is increased by 50% when poisoned."
+  },
+  "trace": {
+    "id": "trace",
+    "name": "Trace",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Copies foe's ability."
+  },
+  "transistor": {
+    "id": "transistor",
+    "name": "Transistor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Powers up Electric-type moves."
+  },
+  "triage": {
+    "id": "triage",
+    "name": "Triage",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Gives priority to restorative moves."
+  },
+  "truant": {
+    "id": "truant",
+    "name": "Truant",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "This Pokemon does nothing every other turn."
+  },
+  "turboblaze": {
+    "id": "turboblaze",
+    "name": "Turboblaze",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Abilities that hinder attacks are nullified."
+  },
+  "unaware": {
+    "id": "unaware",
+    "name": "Unaware",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Ignores stat boosts and debuffs on other Pokemon."
+  },
+  "unburden": {
+    "id": "unburden",
+    "name": "Unburden",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Speed increases when an item is used or lost."
+  },
+  "unnerve": {
+    "id": "unnerve",
+    "name": "Unnerve",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents the foe from consuming its held Berry item."
+  },
+  "unseen_fist": {
+    "id": "unseen_fist",
+    "name": "Unseen Fist",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Contact moves can strike through Protect/Detect."
+  },
+  "victory_star": {
+    "id": "victory_star",
+    "name": "Victory Star",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Increases the accuracy of the wielder and allies on its side of the field by 10%."
+  },
+  "vital_spirit": {
+    "id": "vital_spirit",
+    "name": "Vital Spirit",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents sleep. Increases wild encounters with higher level Pokemon."
+  },
+  "volt_absorb": {
+    "id": "volt_absorb",
+    "name": "Volt Absorb",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Heals 25% HP when hit by an Electric-type attack."
+  },
+  "wandering_spirit": {
+    "id": "wandering_spirit",
+    "name": "Wandering Spirit",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Swaps abilities with opponents on contact."
+  },
+  "water_absorb": {
+    "id": "water_absorb",
+    "name": "Water Absorb",
+    "sources": [
+      "native",
+      "role"
+    ],
+    "roles": [
+      "anchor"
+    ],
+    "unlocksAt": 4,
+    "description": "Heals 25% HP when hit by a Water-type attack."
+  },
+  "water_bubble": {
+    "id": "water_bubble",
+    "name": "Water Bubble",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Halves damage from Fire-type moves, doubles power of Water-type moves used, and prevents burns."
+  },
+  "water_compaction": {
+    "id": "water_compaction",
+    "name": "Water Compaction",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Sharply raises Defense when hit by a Water-type move."
+  },
+  "water_veil": {
+    "id": "water_veil",
+    "name": "Water Veil",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents burn."
+  },
+  "weak_armor": {
+    "id": "weak_armor",
+    "name": "Weak Armor",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Boosts Speed by 1 stage and lowers Defense by 1 stage when hit by a Physical move."
+  },
+  "white_smoke": {
+    "id": "white_smoke",
+    "name": "White Smoke",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Prevents the enemy from lowering this Pokemon's stats and decreases wild encounter rate."
+  },
+  "wimp_out": {
+    "id": "wimp_out",
+    "name": "Wimp Out",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Switches out when HP drops below half."
+  },
+  "wonder_guard": {
+    "id": "wonder_guard",
+    "name": "Wonder Guard",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Only super effective attacks harm this Pokemon."
+  },
+  "wonder_skin": {
+    "id": "wonder_skin",
+    "name": "Wonder Skin",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "Reduces the accuracy of a status move to 50%."
+  },
+  "zen_mode": {
+    "id": "zen_mode",
+    "name": "Zen Mode",
+    "sources": [
+      "native"
+    ],
+    "roles": [],
+    "unlocksAt": 4,
+    "description": "The wielder changes forme when below 50% of its max HP."
+  }
+}
